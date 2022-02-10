@@ -12,6 +12,9 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
+        {/* <Todas/>
+        <MásValoradas/>
+        <MenosValoradas/> */}
       </Router>
     </div>
   );
