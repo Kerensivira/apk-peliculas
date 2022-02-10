@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -9,14 +10,14 @@ const Navbar = () => {
         <div class="container-fluid">
           {/* el logo */}
 
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" href="#">
             <img
               src="https://res.cloudinary.com/alexa01020304/image/upload/v1644454466/logo-blockBuster_aqx7hs.png"
               alt="Logo"
               width="106"
               height="64"
             />
-          </a>
+          </Link>
 
           {/* Enlaces */}
 
@@ -33,15 +34,15 @@ const Navbar = () => {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../BarraDeNavegacion/pages/Todas.js">
+              <Link class="nav-link active" aria-current="page" href="../BarraDeNavegacion/pages/Todas.js">
                Todas
-              </a>
-              <a class="nav-link" href="../BarraDeNavegacion/pages/MásValoradas.js">
+              </Link>
+              <Link class="nav-link" href="../BarraDeNavegacion/pages/MásValoradas.js">
                 Más valoradas
-              </a>
-              <a class="nav-link" href="../BarraDeNavegacion/pages/MenosValoradas.js">
+              </Link>
+              <Link class="nav-link" href="../BarraDeNavegacion/pages/MenosValoradas.js">
                 Menos valoradas
-                </a>
+                </Link>
             </div>
           </div>
         </div>
