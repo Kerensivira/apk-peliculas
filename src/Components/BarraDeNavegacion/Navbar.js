@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from "react";
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div class="container-fluid">
           {/* el logo */}
 
-          <Link class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img
               src="https://res.cloudinary.com/alexa01020304/image/upload/v1644454466/logo-blockBuster_aqx7hs.png"
               alt="Logo"
@@ -34,15 +35,18 @@ const Navbar = () => {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <Link class="nav-link active" aria-current="page" href="../BarraDeNavegacion/pages/Todas.js">
+                
+              <a class="nav-link active" aria-current="page" href="../BarraDeNavegacion/pages/Todas.js">
                Todas
-              </Link>
-              <Link class="nav-link" href="../BarraDeNavegacion/pages/MásValoradas.js">
+              </a>
+
+              <a class="nav-link" href="../BarraDeNavegacion/pages/MásValoradas.js">
                 Más valoradas
-              </Link>
-              <Link class="nav-link" href="../BarraDeNavegacion/pages/MenosValoradas.js">
+              </a>
+
+              <a class="nav-link" href="../BarraDeNavegacion/pages/MenosValoradas.js">
                 Menos valoradas
-                </Link>
+                </a>
             </div>
           </div>
         </div>

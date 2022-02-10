@@ -12,9 +12,11 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
-        {/* <Todas/>
-        <MásValoradas/>
-        <MenosValoradas/> */}
+        <Switch>
+          <Route path='../src/Components/BarraDeNavegacion/pages/Todas.js' exact component = {Todas}/>
+          <Route path='../src/Components/BarraDeNavegacion/pages/MásValoradas.js' exact component = {MásValoradas}/>
+          <Route path='../src/Components/BarraDeNavegacion/pages/MenosValoradas.js' exact component = {MenosValoradas}/>
+        </Switch>
       </Router>
     </div>
   );
