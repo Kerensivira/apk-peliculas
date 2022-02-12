@@ -1,4 +1,5 @@
 import {BarraDeNavegacion} from '../BarraDeNavegacion/Navbar'
+import Pelis from '../Pelis'
 //import { Router, Switch, BrowserRouter } from 'react-router-dom';
 //import Todas from '../BarraDeNavegacion/pages/Todas';
 
