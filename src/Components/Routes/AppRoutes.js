@@ -20,18 +20,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/producto" element={<Productos tarea={tarea} />} />
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Productos />} />
-          <Route path="/crearCuenta" element={<Formulario />} />
-          <Route path="/iniciarSesion" element={<Login />} />
-          <Route path="/detalle/:id" element={<Detail tarea={tarea} />} />
-          <Route path="/busqueda" element={<Busqueda tarea={tarea} />} />
-          <Route path="/carrito" element={<Carrito />} />
-        </Routes>
+          
+       </Routes>
       </BrowserRouter>
     </div>
   );
-};
+//};
 
 export default AppRouter;
