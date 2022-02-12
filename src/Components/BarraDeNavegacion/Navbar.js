@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar } from 'react-bootstrap';
 
-function navbar () {
+export function BarraDeNavegacion() {
 
     return(
 
-      <div className='Navbar'>
+      <div className='BarraDeNavegacion'>
         <Navbar bg='dark'>
 
         </Navbar>
@@ -19,7 +18,7 @@ function navbar () {
 
 }
 
-export default navbar;
+
 
 
 

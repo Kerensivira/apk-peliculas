@@ -1,4 +1,4 @@
-import { Navbar } from '../BarraDeNavegacion/Navbar';
+import {BarraDeNavegacion} from '../BarraDeNavegacion/Navbar'
 //import { Router, Switch, BrowserRouter } from 'react-router-dom';
 //import Todas from '../BarraDeNavegacion/pages/Todas';
 
@@ -6,7 +6,7 @@ import { Navbar } from '../BarraDeNavegacion/Navbar';
 function AppRoutes() {
   return (
     <div className="Navbar">
-      <Navbar/>
+      <BarraDeNavegacion/>
     </div>
   );
 }
