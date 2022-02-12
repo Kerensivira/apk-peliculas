@@ -2,20 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-// const AppRouter = () => {
-
-//   const [tarea, setTarea] = useState([]);
-
-//   const traerDatos = async () => {
-//     const datos = await getData();
-//     setTarea(datos);
-//   };
-
-//   useEffect(() => {
-//     traerDatos();
-//   }, []);
-
-
   return (
     <div>
       <BrowserRouter>
@@ -25,6 +11,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
       </BrowserRouter>
     </div>
   );
-//};
+
+  function todas (){
+    const TodasLasPelis = ['1', '2', '3'];
+  
+  
+    return <div>
+      {TodasLasPelis.map(TodasLasPelis => (
+        <Todas/>
+      ))}
+    </div>
+  }
+
 
 export default AppRouter;
