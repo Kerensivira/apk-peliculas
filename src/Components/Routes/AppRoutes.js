@@ -1,27 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar } from '../BarraDeNavegacion/Navbar';
+//import { Router, Switch, BrowserRouter } from 'react-router-dom';
+//import Todas from '../BarraDeNavegacion/pages/Todas';
 
 
+function AppRoutes() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          
-       </Routes>
-      </BrowserRouter>
+    <div className="Navbar">
+      <Navbar/>
     </div>
   );
+}
 
-  function todas (){
-    const TodasLasPelis = ['1', '2', '3'];
-  
-  
-    return <div>
-      {TodasLasPelis.map(TodasLasPelis => (
-        <Todas/>
-      ))}
-    </div>
-  }
+export default AppRoutes;
 
-
-export default AppRouter;
