@@ -1,13 +1,15 @@
 import React from 'react'
 
-const Todas = () => {
+const movies = ({movies}) => {
   return (
-    <div className="todas">
-      <h1> Esto es un componente </h1>
+    <div className="row">
+      <div className='col'>
+
+      </div>
     </div>
 
     
   )
 }
 
-export default Todas
+export default movies

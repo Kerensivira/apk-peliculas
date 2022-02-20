@@ -1,8 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-export function BarraDeNavegacion() {
+export const Nabar = () => {
 
     return(
 
@@ -12,7 +13,7 @@ export function BarraDeNavegacion() {
 <Navbar.Brand>
   <img 
   src ={"https://res.cloudinary.com/alexa01020304/image/upload/v1644454466/logo-blockBuster_aqx7hs.png"}
-  width= "100px" height="60px"
+  alt = "" width= "100px" height="60px"
   />
 </Navbar.Brand>
 
@@ -20,7 +21,7 @@ export function BarraDeNavegacion() {
 
 <Navbar.Collapse>
 <Nav>
-  <Nav.Link to ='../BarraDeNavegacion/pages/Todas.js'>Todas</Nav.Link>
+  <Nav.Link as={Link} to ="../BarraDeNavegacion/pages/Todas.js">Todas</Nav.Link>
   <Nav.Link to ='../BarraDeNavegacion/pages/MásValoradas.js'>Más Valoradas</Nav.Link>
   <Nav.Link to ='../BarraDeNavegacion/pages/MenosValoradas.js'>Menos Valoradas</Nav.Link>
 </Nav>

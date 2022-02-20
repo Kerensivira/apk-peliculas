@@ -1,14 +1,17 @@
-import {BarraDeNavegacion} from '../BarraDeNavegacion/Navbar'
-import Pelis from '../Pelis'
-//import { Router, Switch, BrowserRouter } from 'react-router-dom';
+import { Nabar } from '../BarraDeNavegacion/Navbar'
+import { Pelis } from '../Pelis';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 //import Todas from '../BarraDeNavegacion/pages/Todas';
 
 
 function AppRoutes() {
   return (
-    <div className="Navbar">
-      <BarraDeNavegacion/>
-    </div>
+    <BrowserRouter>
+    <Nabar/>
+<Routes>
+<Route path='/Pelis' element = {<Pelis/>}/>
+</Routes>
+    </BrowserRouter>
   );
 }
 
