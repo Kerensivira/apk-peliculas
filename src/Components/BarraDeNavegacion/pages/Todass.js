@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
  const IMG_PATH = `https://image.tmdb.org/t/p/w1280`
 // const SEARCH_URL = 'http://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query="'
 
-export function Pelis() {
+export function Todass() {
   const [movies, setMovies] = useState([]);
 
   const url =

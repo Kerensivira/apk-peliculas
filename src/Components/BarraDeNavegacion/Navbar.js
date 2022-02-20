@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+const Logo = "https://res.cloudinary.com/alexa01020304/image/upload/v1644454466/logo-blockBuster_aqx7hs.png"
+
 export const Nabar = () => {
 
     return(
@@ -11,19 +13,18 @@ export const Nabar = () => {
       <div className='BarraDeNavegacion'>
         <Navbar bg='dark' variant='dark' sticky='top' expand='lg'>   
 <Navbar.Brand>
-  <img 
-  src ={"https://res.cloudinary.com/alexa01020304/image/upload/v1644454466/logo-blockBuster_aqx7hs.png"}
-  alt = "" width= "100px" height="60px"
-  />
+ <Nav.Link as={Link} to = "/src/Components/BarraDeNavegacion/pages/Todass.js">
+   <img src ={Logo} alt = "" width= "100px" height="60px"/>
+   </Nav.Link>
 </Navbar.Brand>
 
 <Navbar.Toggle/>
 
 <Navbar.Collapse>
 <Nav>
-  <Nav.Link as={Link} to ="../BarraDeNavegacion/pages/Todas.js">Todas</Nav.Link>
-  <Nav.Link to ='../BarraDeNavegacion/pages/MásValoradas.js'>Más Valoradas</Nav.Link>
-  <Nav.Link to ='../BarraDeNavegacion/pages/MenosValoradas.js'>Menos Valoradas</Nav.Link>
+  <Nav.Link as={Link} to ="../BarraDeNavegacion/pages/Todass.js">Todas</Nav.Link>
+  <Nav.Link as={Link} to ='../BarraDeNavegacion/pages/MásValoradas.js'>Más Valoradas</Nav.Link>
+  <Nav.Link as={Link} to ='../BarraDeNavegacion/pages/MenosValoradas.js'>Menos Valoradas</Nav.Link>
 </Nav>
 </Navbar.Collapse>
         </Navbar>
@@ -40,12 +41,6 @@ export const Nabar = () => {
 
 
 
-//<img
-              //src="https://res.cloudinary.com/alexa01020304/image/upload/v1644454466/logo-blockBuster_aqx7hs.png"
-              //alt="Logo"
-              //width="106"
-              //height="64" 
-            ///>
 
 
 

@@ -1,5 +1,5 @@
 import { Nabar } from '../BarraDeNavegacion/Navbar'
-import { Pelis } from '../Pelis';
+import { Todass } from '../BarraDeNavegacion/pages/Todass';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 //import Todas from '../BarraDeNavegacion/pages/Todas';
 
@@ -9,7 +9,7 @@ function AppRoutes() {
     <BrowserRouter>
     <Nabar/>
 <Routes>
-<Route path='/Pelis' element = {<Pelis/>}/>
+<Route path='../BarraDeNavegacion/pages/Todass.js' element = {<Todass/>}/>
 </Routes>
     </BrowserRouter>
   );
