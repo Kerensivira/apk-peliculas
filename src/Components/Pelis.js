@@ -30,7 +30,7 @@ console.log(movies);
     movies.map(el => (
         
         <div key={el.id}>
-            <img src = {IMG_PATH + el.poster_path}/>
+            <img src = {IMG_PATH + el.poster_path} alt = ''/>
             <h3>{el.title}</h3>
             </div>
     ))
